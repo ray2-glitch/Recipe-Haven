@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Haven</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="head-overlay"></div>   
+        <h1>Welcome to Recipe Haven</h1>
+        <p>Select a meal type below to explore some delicious recipes!</p>
+    </header>
+    
+
+   
+    <div class="navbar">
+        <div class="navbar-icons">
+            <span class="search-icon" onclick="toggleSearch()">🔍</span>
+            <span class="notification-icon">🔔</span>
+            <span class="account-icon">👤</span>
+        </div>
+    </div>
+
+   
+    <nav id="meal-links">
+        <a href="#" onclick="showRecipes('breakfast')">Breakfast</a> |
+        <a href="#" onclick="showRecipes('lunch')">Lunch</a> |
+        <a href="#" onclick="showRecipes('dinner')">Dinner</a>
+    </nav>
+
+
+    <div id="recipe-list" class="recipe-container">
+   
+    </div>
+
+
+    <input type="text" id="search-input" placeholder="Search recipes..." style="display: none;">
+    <div id="search-results" style="display: none;"></div>
+    
+    <footer>
+        <p>&copy; 2024 Recipe Haven</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
